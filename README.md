@@ -12,7 +12,7 @@ Here is my Dell PC specification:
 - Audio card: Realtek ALC234
 - Ethernet card: Realtek RTL8111
 ### Software detail:
-- OpenCore version: 1.0.0
+- Bootloader: OpenCore 1.0.0
 - macOS: Ventura 13.6.6
 - SMBIOS: iMac18,1
 ### Working list:
