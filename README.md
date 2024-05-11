@@ -2,7 +2,7 @@
 
 ### Hackintosh-on-Dell-Optiplex-3050-SFF
 Welcome to the Hackintosh tutorial on Dell Optiplex 3050 SFF tutorial. This repository provides a pre-made EFI setup for the OpenCore bootloader specifically designed for the Dell Optiplex 3050 SFF.
-I hope you can install macOS on your PC successfully. Please read this guide carefully.
+I hope this post can help you to install macOS on your PC successfully. Please read this guide carefully.
 ### Hardware detail:
 Here is my Dell PC specification:
 - Model: Dell Optiplex 3050 SFF
