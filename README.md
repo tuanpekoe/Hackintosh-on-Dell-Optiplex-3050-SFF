@@ -15,7 +15,7 @@ This this my Dell PC specification:
 ### Software detail:
 - OpenCore version: 1.0.0
 - macOS: Ventura 13.6.6
-- SMBIOS: iMac 18,1
+- SMBIOS: iMac18,1
 ### Working list:
 - Integrated graphics: Intel UHD 630
 - Audio card: Realtek ALC234 (Internal speaker, Headphone jack)
@@ -35,7 +35,7 @@ This is the most important step of the tutorial, so I give you 02 options for th
 - Option 2: I enabled the iGPU patching to show a little smoothness when installation. (Note: This option is only for experienced user)
 
 ### Post-install instruction
-Please aware that this Pre-made EFI can work perpectly on your Dell Optiplex or can not, because harware is varies. You may need to modify some parameter to match your hardware.
+Please be aware that this Pre-made EFI can work perpectly on your Dell Optiplex or can not, because harware is not the same. You may need to modify some parameters to match your hardware.
 I already fixed some major problems on my Dell Optiplex 3050 SFF as follow:
 - Problem 01: Pink/tint/magent screen color when connect to HDMI port. I fixed the **connector-type** in config.plist.
 - Problem 02: Monitor suddenly turn off (black screen) at the login screen. I added agdpmod=vit9696 to Boot Arrgument in config.plist.
@@ -48,6 +48,6 @@ I already fixed some major problems on my Dell Optiplex 3050 SFF as follow:
 - [mavethee](https://github.com/mavethee/Hackintosh-OpenCore-EFI-DELL-Optiplex-3050) for EFI folder
 - [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
 - [USBMap](https://github.com/corpnewt/USBMap)
-- [Intel UHD 630 patch - Pink/tint/magenta color]([https://github.com/corpnewt/USBMap](https://elitemacx86.com/threads/how-to-fix-pink-screen-on-intel-hd-and-uhd-graphics-on-macos-sierra-and-later-on-desktops-clover-opencore.434/))
+- [Intel UHD 630 patch - Pink/tint/magenta color](https://elitemacx86.com/threads/how-to-fix-pink-screen-on-intel-hd-and-uhd-graphics-on-macos-sierra-and-later-on-desktops-clover-opencore.434/)
 - [Intel UHD 630 patch - HDMI fix](https://elitemacx86.com/threads/how-to-fix-pink-screen-on-intel-hd-and-uhd-graphics-on-macos-sierra-and-later-on-desktops-clover-opencore.434/)
 - [Audio fix](https://dortania.github.io/OpenCore-Post-Install/universal/audio.html)
