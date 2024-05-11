@@ -21,7 +21,7 @@ This this my Dell PC specification:
 - Audio card: Realtek ALC234 (Internal speaker, Headphone jack)
 - Ethernet card: Realtek RTL8111
 - HDMI port and HDMI audio
-- Display port
+- DisplayPort
 ### Not Working list:
 - VGA port
 ### BIOS setting and some tips:
