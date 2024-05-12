@@ -28,7 +28,7 @@ Here is my Dell PC specification:
 - Tip 01: You should try to connect your monitor to **HDMI port** because DisplayPortor VGA port may not work for you when booting. If HDMI port does not work, try DisplayPort.
 - Tip 02: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting.
 - Tip 03: Sometimes you need to choose option "**Reset NVRam**" at the Opencore's boot screen to refresh NVRam. You may need to press "Space bar" at the boot screen to show up the option.
-- Tip 04: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot.
+- Tip 04: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot. Download the latest release of _RestrictEvents.kext_, and use it with the boot flag (boot argument) _revpatch=sbvmm_. 
 - Tip 05: If booting gets stuck/panic, try different **Boot flags** (see Credits section). Example: _-igfxvesa_ to force GPU into VESA mode (no GPU acceleration).
 ## BIOS setting:
 - Step 01: Reset BIOS to default. This step is important, do not skip it.
