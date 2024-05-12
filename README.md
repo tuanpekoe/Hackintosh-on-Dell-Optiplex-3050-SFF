@@ -24,6 +24,7 @@ Here is my Dell PC specification:
 - All USB ports: Both 2.0 and 3.0
 ## Not Working list:
 - VGA port
+- Sleep/awake
 ## Uselful tips:
 - Tip 01: You should try to connect your monitor to **HDMI port** because DisplayPortor VGA port may not work for you when booting. If HDMI port does not work, try DisplayPort.
 - Tip 02: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting.
