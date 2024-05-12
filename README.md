@@ -49,8 +49,8 @@ This is the most important step of the tutorial, a lot of people failed and gave
 - Option 01: I disabled the **iGPU** and **Audio** patching to prevent any conflicts when booting. (Note: If you are newbie, you are highly recommended to choose this)
 - Option 02: I enabled the **iGPU** patching to show a little smoothness and transparent window at the installation step, it is called GPU acceleration. (Note: This option is only for experienced user)
 ## Post-install instruction:
-Please be aware that this Pre-made EFI can work perpectly on your Dell Optiplex or can not, because harware is not the same. You may need to modify some parameters to match your hardware, please check the Credits part to do it by yourself.
-I already fixed some major problems on my Dell Optiplex 3050 SFF as follow:
+Please be aware that this Pre-made EFI can work perpectly on your Dell Optiplex 3050 SFF or can not, because our harware is not exactly the same. You may need to modify some parameters to match your hardware, please check the Credits part to do it by yourself.
+In Post-installation step, I already fixed some major problems on my Dell Optiplex 3050 SFF as follow:
 - Problem 01: Pink/tint/magent screen color when connect to HDMI port. I fixed the **connector-type** in config.plist.
 - Problem 02: Monitor suddenly turns off (black screen) at the login screen (or after apple logo boot). I added **agdpmod=vit9696** to Boot Arrgument in config.plist.
 - Problem 03: DisplayPort can not export signal to the monitor. I fixed the **connector-type** in config.plist.
