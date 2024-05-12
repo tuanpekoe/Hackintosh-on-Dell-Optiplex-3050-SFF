@@ -1,4 +1,4 @@
-<img src="https://developer.apple.com/licensing-trademarks/images/mac-logo.svg" width="200" height="48"/>
+<img src="https://developer.apple.com/licensing-trademarks/images/mac-logo.svg" width="400" height="60"/> | 
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
 ## Hackintosh on Dell Optiplex 3050 SFF:
