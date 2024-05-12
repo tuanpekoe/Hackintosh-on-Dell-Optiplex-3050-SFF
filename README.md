@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-## Hackintosh-on-Dell-Optiplex-3050-SFF
+## Hackintosh on Dell Optiplex 3050 SFF:
 Welcome to the Hackintosh tutorial on Dell Optiplex 3050 SFF tutorial. This repository provides a pre-made EFI setup for the OpenCore bootloader specifically designed for the Dell Optiplex 3050 SFF.
-I hope this post can help you to install macOS on your PC successfully. Please read this guide carefully.
+I hope this post can help you to install macOS on your PC successfully. Please read this guide carefully and I wish you get luck.
 ## Hardware detail:
 Here is my Dell PC specification:
 - Model: Dell Optiplex 3050 SFF
@@ -30,16 +30,24 @@ Here is my Dell PC specification:
 - Tip 03: Sometimes you need to choose option "**Reset NVRam**" at the Opencore's boot screen to refresh NVRam. You may need to press "Space bar" at the boot screen to show up the option.
 - Tip 04: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot.
 - Tip 05: If booting gets stuck/panic, try different **Boot flags** (see Credits section). Example: _-igfxvesa_ to force GPU into VESA mode (no GPU acceleration).
-## BIOS setting
+## BIOS setting:
 - Step 01: Reset BIOS to default. This step is important, do not skip it.
-- Step 02: Disable those parameters in BIOS: "Sercure Boot", "Enable Legacy Option ROMs", "Intel SGX", "Serial COM/port"
-- Step 03: Enable those parameters in BIOS: "AHCI"
-- Step 04: Save and exit BIOS. Press F12 to choose boot from macOS installation USB.
-## Pre-install instruction
+- Step 02: Disable and Enable several parameters as table bellow.
+- Step 03: Save and exit BIOS. Press F12 to choose boot from macOS installation USB.
+
+| ❌ You should disable     | ✅ You should enable |
+|---------------------------|---------------------- |
+| Secure Boot               | AHCI                  |
+| Serial/COM Port           |                       |
+| Enable Legacy Option ROMs |                       |
+| Intel SGX                 |                       |
+| Serial COM/port           |                       |
+
+## Pre-install instruction:
 This is the most important step of the tutorial, a lot of people failed and gave up. So I give you 02 options for the first boot to macOS installation on the PC.
 - Option 01: I disabled the **iGPU** and **Audio** patching to prevent any conflicts when booting. (Note: If you are newbie, you are highly recommended to choose this)
 - Option 02: I enabled the **iGPU** patching to show a little smoothness and transparent window at the installation step, it is called GPU acceleration. (Note: This option is only for experienced user)
-## Post-install instruction
+## Post-install instruction:
 Please be aware that this Pre-made EFI can work perpectly on your Dell Optiplex or can not, because harware is not the same. You may need to modify some parameters to match your hardware, please check the Credits part to do it by yourself.
 I already fixed some major problems on my Dell Optiplex 3050 SFF as follow:
 - Problem 01: Pink/tint/magent screen color when connect to HDMI port. I fixed the **connector-type** in config.plist.
