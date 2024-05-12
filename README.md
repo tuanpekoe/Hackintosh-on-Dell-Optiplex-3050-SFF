@@ -8,20 +8,20 @@ Here is my Dell PC specification:
 - Model: Dell Optiplex 3050 SFF
 - CPU: Intel Core i5 7500
 - Ram: DDR4 8GB
-- Integrated graphics: Intel UHD 630
-- Audio card: Realtek ALC234
-- Ethernet card: Realtek RTL8111
+- Integrated graphics: Intel UHD 630 (Intel HD Graphics 630)
+- Audio card: Realtek ALC255
+- Ethernet card: Realtek RTL8168/8111
 ## Software detail:
 - Bootloader: OpenCore 1.0.0
 - macOS: Ventura 13.6.6
 - SMBIOS: iMac18,1
 ## Working list:
-- Integrated graphics: Intel UHD 630
-- Audio card: Realtek ALC234 (Internal speaker, Headphone jack)
-- Ethernet card: Realtek RTL8111
+- Integrated graphics: Intel UHD 630 (Intel HD Graphics 630)
+- Audio card: Realtek ALC255 (Internal speaker, Headphone jack)
+- Ethernet card: Realtek RTL8168/8111
 - HDMI port and HDMI audio
 - DisplayPort
-- USB ports: Both 2.0 and 3.0
+- All USB ports: Both 2.0 and 3.0
 ## Not Working list:
 - VGA port
 ## Uselful tips:
@@ -37,10 +37,10 @@ Here is my Dell PC specification:
 
 | ❌ You should disable     | ✅ You should enable |
 |---------------------------|---------------------- |
-| Secure Boot               | AHCI                  |
-| Serial/COM Port           |                       |
-| Enable Legacy Option ROMs |                       |
-| Intel SGX                 |                       |
+| Secure Boot               | Sata Operation: AHCI  |
+| Serial/COM Port           | Intel Virtualization  |
+| Enable Legacy Option ROMs | VT for Direct I/O     |
+| Intel SGX                 | Fastboot: Thorough    |
 | Serial COM/port           |                       |
 
 ## Pre-install instruction:
