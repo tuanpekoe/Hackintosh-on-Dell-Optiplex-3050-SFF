@@ -45,7 +45,7 @@ Here is my Dell PC specification:
 | Serial COM/port           |                       |
 
 ## Pre-install instruction:
-This is the most important step of the tutorial, a lot of people failed and gave up. So I give you 02 options for the first boot to macOS installation on the PC.
+This is the most important step of the tutorial, a lot of people failed and gave up on first booting. So I give you 02 options for the first boot to macOS installation on the PC.
 - Option 01: I disabled the **iGPU** and **Audio** patching to prevent any conflicts when booting. (Note: If you are newbie, you are highly recommended to choose this)
 - Option 02: I enabled the **iGPU** patching to show a little smoothness and transparent window at the installation step, it is called GPU acceleration. (Note: This option is only for experienced user)
 ## Post-install instruction:
