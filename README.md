@@ -1,6 +1,6 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png" width="48" height="60"/> <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-## Hackintosh on Dell Optiplex 3050 SFF and Kaby Lake system:
+## Hackintosh on Dell Optiplex 3050 SFF (and Kaby Lake system):
 Welcome to the Hackintosh tutorial on Dell Optiplex 3050 SFF tutorial. This repository provides a pre-made EFI setup for the OpenCore bootloader specifically designed for the Dell Optiplex 3050 SFF as well as Kaby Lake system.
 I hope this post can help you to install macOS on your PC successfully. Please read this guide carefully and I wish you get luck.
 ## Hardware detail:
