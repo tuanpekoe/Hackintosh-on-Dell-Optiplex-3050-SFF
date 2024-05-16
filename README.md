@@ -27,7 +27,7 @@ Here is my Dell PC specification:
 - Sleep/awake
 ## Uselful tips:
 - Tip 01: You should try to connect your monitor to **HDMI port** because DisplayPortor VGA port may not work for you when booting. If HDMI port does not work, try DisplayPort.
-- Tip 02: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting.
+- Tip 02: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting. You may need to map USB ports before booting to avoid booting errors and make sure that USB Keyboard/Mouse will work on Recovery OS.
 - Tip 03: Sometimes you need to choose option "**Reset NVRam**" at the Opencore's boot screen to refresh NVRam. You may need to press "Space bar" at the boot screen to show up the option.
 - Tip 04: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot. Download the latest release of _RestrictEvents.kext_, and use it with the boot flag (boot argument) _revpatch=sbvmm_. 
 - Tip 05: If booting gets stuck/panic, try different **Boot flags** (see Credits section). Example: _-igfxvesa_ to force GPU into VESA mode (no GPU acceleration).
@@ -61,6 +61,7 @@ In Post-installation step, I already fixed some major problems on my Dell Optipl
 - [mavethee](https://github.com/mavethee/Hackintosh-OpenCore-EFI-DELL-Optiplex-3050) for EFI Pre-made
 - [acidanthera](https://github.com/acidanthera/HibernationFixup) for Hibernate fix
 - [corpnewt](https://github.com/corpnewt/USBMap) for USBMap fix
+- [USBToolBox](https://github.com/USBToolBox/tool) for USBMap fix
 - [EliteMacx86](https://elitemacx86.com/threads/how-to-fix-pink-screen-on-intel-hd-and-uhd-graphics-on-macos-sierra-and-later-on-desktops-clover-opencore.434/) for Pink/tint/magent screen color fix
 - [EliteMacx86](https://elitemacx86.com/threads/how-to-enable-intel-hd-and-uhd-graphics-on-macos-intel-framebuffer-patching-guide.931/) for HDMI and DisplayPort fix
 - [dortania](https://dortania.github.io/GPU-Buyers-Guide/misc/bootflag.html) for Boot flags
