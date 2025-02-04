@@ -12,8 +12,8 @@ Here is my Dell PC specification:
 - Audio card: Realtek ALC255
 - Ethernet card: Realtek RTL8168/8111
 ## Software detail:
-- Bootloader: OpenCore 1.0.0
-- macOS: Ventura 13.6.6
+- Bootloader: OpenCore 1.0.3 (date 2025/02/04)
+- macOS: Ventura 13.7.3 (date 2025/02/04)
 - SMBIOS: iMac18,1
 ## Working list:
 - Integrated graphics: Intel UHD 630 (Intel HD Graphics 630)
@@ -56,6 +56,18 @@ In Post-installation step, I already fixed some major problems on my Dell Optipl
 - Problem 03: DisplayPort can not export signal to the monitor. I fixed the **connector-type** in config.plist.
 - Problem 04: Headphone jack issue (distort sound) because of wrong **alcid** ID. I already set **alcid=11** in config.plist and it works very well.
 - Problem 05: Some USB 2.0 and 3.0 ports can not recognize USB sticks. I fixed it by USBMap method.
+## OpenCore Update instruction:
+1. Replace all **efi** files:
+- EFI/BOOT/BOOTx64.efi
+- EFI/OC/OpenCore.efi
+- EFI/OC/Drivers/OpenRuntime.efi
+- EFI/OC/Drivers/OpenCanopy.efi
+- EFI/OC/Drivers/ResetNvramEntry.efi
+2. Update all **Kexts** of Acidanthera. Example: AppleALC.kext, Lilu.kext, WhateverGreen.kext
+2. Check **Config.plist** update by **OCConfigCompare** and **ocvalidate** tools.
+3. If your Bios can not detect OpenCore update, you should go to Bios and add EFI entry for OpenCore.
+- EFI/BOOT/BOOTx64.efi
+4. There are some tools for OpenCore automatic update. Example: OCAT
 ## Credits:
 - [1rocketdude](https://github.com/1rocketdude/Optiplex_3050_SFF) for Displayport patching
 - [mavethee](https://github.com/mavethee/Hackintosh-OpenCore-EFI-DELL-Optiplex-3050) for EFI Pre-made
