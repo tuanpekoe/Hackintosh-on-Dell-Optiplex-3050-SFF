@@ -26,11 +26,12 @@ Here is my Dell PC specification:
 - VGA port
 - Sleep/awake
 ## Uselful tips:
-- Tip 01: You should try to connect your monitor to **HDMI port** because DisplayPortor VGA port may not work for you when booting. If HDMI port does not work, try DisplayPort.
-- Tip 02: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting. You may need to map USB ports before booting to avoid booting errors and make sure that USB Keyboard/Mouse will work on Recovery OS.
-- Tip 03: Sometimes you need to choose option "**Reset NVRam**" at the Opencore's boot screen to refresh NVRam. You may need to press "Space bar" at the boot screen to show up the option.
-- Tip 04: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot. Download the latest release of _RestrictEvents.kext_, and use it with the boot flag (boot argument) _revpatch=sbvmm_. 
-- Tip 05: If booting gets stuck/panic, try different **Boot flags** (see Credits section). Example: _-igfxvesa_ to force GPU into VESA mode (no GPU acceleration).
+- Tip 01: You should try to connect your monitor to **HDMI port** because DisplayPort (or VGA port) may not work for you when booting. If HDMI port does not work, try DisplayPort (or VGA port).
+- Tip 02: Do not use an Adaptor to connect your PC to Monitor (Example: Displayport to DVI, HDMI to VGA, etc). It may cause exporting signal problem and then your ports will not work properly.
+- Tip 03: Plug installation USB to **2.0 port** instead of 3.0 port. That will help you to prevent some silly errors when booting. You may need to map USB ports before booting to avoid booting errors and make sure that USB Keyboard/Mouse will work on Recovery OS.
+- Tip 04: Sometimes you need to choose option "**Reset NVRam**" at the Opencore's boot screen to refresh NVRam. You may need to press "Space bar" at the boot screen to show up the option.
+- Tip 05: **iMac18,1** is the best fitted SMBIOS to for Intel Kaby Lake with macOS Ventura. If you want to install macOS Sonoma, you need to change the SMBIOS to **iMac19,1**, otherwise macOS can not boot. Download the latest release of _RestrictEvents.kext_, and use it with the boot flag (boot argument) _revpatch=sbvmm_. 
+- Tip 06: If booting gets stuck/panic, try different **Boot flags** (see Credits section). Example: _-igfxvesa_ to force GPU into VESA mode (no GPU acceleration).
 ## BIOS setting:
 - Step 01: Reset BIOS to default. This step is important, do not skip it.
 - Step 02: Disable and Enable several parameters as table bellow.
